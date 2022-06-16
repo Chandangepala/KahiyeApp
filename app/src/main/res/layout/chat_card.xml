@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:foregroundGravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_img"
+            android:padding="@dimen/_3sdp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/colorGray"
+            android:elevation="@dimen/_3sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_name_txt"
+            android:layout_toRightOf="@id/chat_img"
+            android:padding="@dimen/_5sdp"
+            android:text="Chan"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_18sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_lastMsg_txt"
+            android:layout_below="@id/chat_name_txt"
+            android:layout_toRightOf="@id/chat_img"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="How's you!"
+            android:textColor="@color/colorGray"
+            android:maxLength="15"
+            android:ellipsize="end"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_time_txt"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="7:00 PM"
+            android:textColor="@color/colorGray"
+            android:maxLength="15"
+            android:textSize="@dimen/_12sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_unreadCount_txt"
+            android:layout_below="@id/chat_time_txt"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:text="2"
+            android:textColor="@color/colorGray"
+            android:maxLength="15"
+            android:ellipsize="end"
+            android:textSize="@dimen/_12sdp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

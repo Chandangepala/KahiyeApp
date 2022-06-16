@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp"
+              android:layout_marginLeft="@dimen/_5sdp"
+              android:layout_marginStart="@dimen/_5sdp"
+              android:orientation="vertical"
+              android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:maxHeight="400dp"
+        android:maxWidth="400dp"
+        android:adjustViewBounds="true"
+        android:src = "@drawable/always_logo"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:maxWidth="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Message"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        tools:text="Message"
+        android:layout_gravity="start"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:text="Name" />
+</LinearLayout>

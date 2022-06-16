@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:foregroundGravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:id="@+id/contact_img"
+            android:padding="@dimen/_3sdp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/colorGray"
+            android:elevation="@dimen/_2sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cont_name_txt"
+            android:layout_toRightOf="@id/contact_img"
+            android:padding="@dimen/_5sdp"
+            android:text="Chan"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_18sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cont_status_txt"
+            android:layout_below="@id/cont_name_txt"
+            android:layout_toRightOf="@id/contact_img"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="doing great"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/_14sdp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

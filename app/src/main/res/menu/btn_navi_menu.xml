@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/always_menu"
+        android:title="Always"
+        android:icon="@drawable/ic_always"
+        app:showAsAction="always"/>-->
+    <item
+        android:id="@+id/chat_menu"
+        android:title="Chats"
+        android:icon="@drawable/ic_chat_"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/contacts_menu"
+        android:title="Contacts"
+        android:icon="@drawable/ic_contacts_"
+        app:showAsAction="always"/>
+</menu>
